@@ -10,8 +10,8 @@ public class Test6 {
 	 */
 	public static void main(String[] args) {
 		try {
-//			Test6.testRandomAcessFileRead();
-			Test6.testRandomAcessFileWrite();
+			Test6.testRandomAcessFileRead();
+//			Test6.testRandomAcessFileWrite();
 		} catch (Exception e) {
 			// TODO 自动生成的 catch 块
 			e.printStackTrace();
