@@ -9,16 +9,19 @@ public class Person {
 class Student extends Person implements Move,Study{
 	
 	public Student() {
-		
+		System.out.println("public Student()");
 	}
 
 	public Student(String school) {
 		this.school=school;
+		System.out.println("public Student(String school)");
 	}
-	String school;
+	public String school;
+	private String privateField;
 	private Student(String school,int age) {
 		this.school=school;
 		this.age=age;
+		System.out.println("private Student(String school,int age)");
 	}
 	@Override
 	public void studyInfo() {
@@ -33,6 +36,16 @@ class Student extends Person implements Move,Study{
 	}
 	public void showInfo() {
 		System.out.println("ѧУ"+this.school);
+	}
+	private void test(String name) {
+		this.name=name;
+		System.out.println("private void test(String name)");
+	}
+	
+	public void setInfo(String name,String school) {
+		this.name=name;
+		this.school=school;
+		System.out.println("setInfo(String name,String school)");
 	}
 
 }
